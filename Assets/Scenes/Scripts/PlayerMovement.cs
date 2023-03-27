@@ -62,7 +62,14 @@ public class PlayerMovement : MonoBehaviour
         verticalInput = Input.GetAxisRaw("Vertical");
 
         // when to jump
-        if(Input)
+        if(Input.GetKey(jumpKey) && readyToJump && grounded)
+        {
+            readyToJump = false;
+
+            Jump();
+
+            Invoke(nameof(ResetJump), jumpCoolDown);
+        }
     }
 
     private void MovePlayer()
@@ -70,7 +77,14 @@ public class PlayerMovement : MonoBehaviour
         // calculate movement direction
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
-        rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+        // on ground
+        if (grounded)
+            rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+
+        // in air
+        else if(!grounded)
+            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
+
     }
 
     private void SpeedControl()

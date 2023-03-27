@@ -620,7 +620,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 445938392}
-  m_LocalRotation: {x: 0.04210057, y: 0.0000000037219878, z: -1.5683686e-10, w: 0.9991134}
+  m_LocalRotation: {x: 0.04210057, y: -0.0000000037219878, z: 1.5683686e-10, w: 0.9991134}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -926,7 +926,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.042100575, y: 0.0000000037219878, z: -1.5683688e-10, w: 0.9991134}
+  m_LocalRotation: {x: 0.042100575, y: -0.0000000037219878, z: 1.5683688e-10, w: 0.9991134}
   m_LocalPosition: {x: 0, y: -2.476943, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1049,6 +1049,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 7
   groundDrag: 5
+  jumpForce: 12
+  jumpCoolDown: 0.25
+  airMultiplier: 0.4
+  jumpKey: 32
   playerHeight: 2
   whatIsGround:
     serializedVersion: 2
