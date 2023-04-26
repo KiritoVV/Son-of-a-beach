@@ -23,7 +23,6 @@ public class Item : MonoBehaviour
     void Start()
     {
         inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
-
        
     }
 
@@ -65,7 +64,7 @@ public class Item : MonoBehaviour
         }
         else
         {
-            Interact.gameObject.SetActive(true);
+            Interact.gameObject.SetActive(false);
             isInTrigger = false;
         }
     }
