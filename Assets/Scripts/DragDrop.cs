@@ -7,6 +7,6 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler
 {
     public void OnPointerDown(PointerEventData eventData)
     {
-        throw new System.NotImplementedException();
+        Debug.Log("OnPointerDown");
     }
 }

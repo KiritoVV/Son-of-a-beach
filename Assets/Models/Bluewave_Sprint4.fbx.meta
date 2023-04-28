@@ -1,0 +1,291 @@
+fileFormatVersion: 2
+guid: 9308d0b850babb44b9203f12c7f4db09
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: 8407550271612164036
+    second: 2.5D Camera|ArmsAction.001
+  - first:
+      74: 3965728077707440125
+    second: 2.5D Camera|ArmsAction.002
+  - first:
+      74: 7378758099665821286
+    second: 2.5D Camera|Back HeadAction.001
+  - first:
+      74: -9157365940368480415
+    second: 2.5D Camera|Blush LAction.001
+  - first:
+      74: -7938996355095408238
+    second: 2.5D Camera|BlushAction.001
+  - first:
+      74: -8366188649654226158
+    second: 2.5D Camera|CameraAction.001
+  - first:
+      74: -8665485623902443599
+    second: 2.5D Camera|CameraAction.002
+  - first:
+      74: -83375348301837079
+    second: 2.5D Camera|CameraAction.003
+  - first:
+      74: 4207543882368231902
+    second: 2.5D Camera|Eyes LAction.001
+  - first:
+      74: -346270957114507106
+    second: 2.5D Camera|EyesAction.001
+  - first:
+      74: -6126437735398685856
+    second: 2.5D Camera|Hair.001Action.001
+  - first:
+      74: -7396338714270634454
+    second: 2.5D Camera|Hair.002Action.001
+  - first:
+      74: -670416422345893270
+    second: 2.5D Camera|Hair.003Action.001
+  - first:
+      74: -5561085555603951443
+    second: 2.5D Camera|Hair.004Action.001
+  - first:
+      74: -6458655746082259493
+    second: 2.5D Camera|HandsAction.001
+  - first:
+      74: 8418250304884469253
+    second: 2.5D Camera|HeadAction.001
+  - first:
+      74: -5659527698781369446
+    second: 2.5D Camera|JacketAction.001
+  - first:
+      74: -5377480895455662470
+    second: 2.5D Camera|LegAction.001
+  - first:
+      74: -2345974025202665092
+    second: 2.5D Camera|Short Camos LAction.001
+  - first:
+      74: -4090389230853024711
+    second: 2.5D Camera|Short CamosAction.001
+  - first:
+      74: 5352933539648986396
+    second: 2.5D Camera|TorsoAction.001
+  - first:
+      74: 9212499793690305092
+    second: 2SideScroller Camera|ArmsAction.001
+  - first:
+      74: -8535710411499184070
+    second: 2SideScroller Camera|ArmsAction.002
+  - first:
+      74: -3748743249862436437
+    second: 2SideScroller Camera|Back HeadAction.001
+  - first:
+      74: 5153303441021624135
+    second: 2SideScroller Camera|Blush LAction.001
+  - first:
+      74: 2305136805067061564
+    second: 2SideScroller Camera|BlushAction.001
+  - first:
+      74: -2669705390553654707
+    second: 2SideScroller Camera|CameraAction.001
+  - first:
+      74: 1517766009371084953
+    second: 2SideScroller Camera|CameraAction.002
+  - first:
+      74: 618201494617911476
+    second: 2SideScroller Camera|CameraAction.003
+  - first:
+      74: 5393664331310952643
+    second: 2SideScroller Camera|Eyes LAction.001
+  - first:
+      74: 6713512392199875513
+    second: 2SideScroller Camera|EyesAction.001
+  - first:
+      74: 6809117875838896037
+    second: 2SideScroller Camera|Hair.001Action.001
+  - first:
+      74: 430486783857486075
+    second: 2SideScroller Camera|Hair.002Action.001
+  - first:
+      74: 372473383906580306
+    second: 2SideScroller Camera|Hair.003Action.001
+  - first:
+      74: -7622176569047267880
+    second: 2SideScroller Camera|Hair.004Action.001
+  - first:
+      74: -5824023181241440477
+    second: 2SideScroller Camera|HandsAction.001
+  - first:
+      74: 8922960580936295384
+    second: 2SideScroller Camera|HeadAction.001
+  - first:
+      74: 2511484113463963226
+    second: 2SideScroller Camera|JacketAction.001
+  - first:
+      74: -3384903218174337737
+    second: 2SideScroller Camera|LegAction.001
+  - first:
+      74: -6765634304565335209
+    second: 2SideScroller Camera|Short Camos LAction.001
+  - first:
+      74: 2118194468822244269
+    second: 2SideScroller Camera|Short CamosAction.001
+  - first:
+      74: 4328785563244216988
+    second: 2SideScroller Camera|TorsoAction.001
+  - first:
+      74: -2848206284600785630
+    second: 360 Camera|ArmsAction.001
+  - first:
+      74: -6893209302191280883
+    second: 360 Camera|ArmsAction.002
+  - first:
+      74: -5303637464942361561
+    second: 360 Camera|Back HeadAction.001
+  - first:
+      74: -3983614254084046579
+    second: 360 Camera|Blush LAction.001
+  - first:
+      74: 687330129250988029
+    second: 360 Camera|BlushAction.001
+  - first:
+      74: 5467971933742778134
+    second: 360 Camera|CameraAction.001
+  - first:
+      74: -3351328720935906726
+    second: 360 Camera|CameraAction.002
+  - first:
+      74: 2691730554304650090
+    second: 360 Camera|CameraAction.003
+  - first:
+      74: 7340632271094715847
+    second: 360 Camera|Eyes LAction.001
+  - first:
+      74: -3243331416438975112
+    second: 360 Camera|EyesAction.001
+  - first:
+      74: -249694172705196068
+    second: 360 Camera|Hair.001Action.001
+  - first:
+      74: 2222003133795678857
+    second: 360 Camera|Hair.002Action.001
+  - first:
+      74: -2752253154401561143
+    second: 360 Camera|Hair.003Action.001
+  - first:
+      74: -6291138954830843834
+    second: 360 Camera|Hair.004Action.001
+  - first:
+      74: 279784063931611356
+    second: 360 Camera|HandsAction.001
+  - first:
+      74: 3998982349550915010
+    second: 360 Camera|HeadAction.001
+  - first:
+      74: 7810786534710346828
+    second: 360 Camera|JacketAction.001
+  - first:
+      74: 9199566005909693355
+    second: 360 Camera|LegAction.001
+  - first:
+      74: 1351369175676729234
+    second: 360 Camera|Short Camos LAction.001
+  - first:
+      74: -3782289879063700968
+    second: 360 Camera|Short CamosAction.001
+  - first:
+      74: 7223750292821920126
+    second: 360 Camera|TorsoAction.001
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
