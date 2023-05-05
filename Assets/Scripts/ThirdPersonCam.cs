@@ -45,7 +45,10 @@ public class ThirdPersonCam : MonoBehaviour
             {
                 playerObj.forward = Vector3.Slerp(playerObj.forward, inputDir.normalized, Time.deltaTime * rotationSpeed);
                 //playerObj.localRotation = new Vector3(0, playerObj.localRotation.y, playerObj.localRotation.z);
+                playerObj.transform.localRotation = Quaternion.Euler(new Vector3(-90f, playerObj.transform.localEulerAngles.y, playerObj.transform.localEulerAngles.z));
             }
         }
+        //playerObj.Rotate (-90f, playerObj.localRotation.y, playerObj.localRotation.z); 
     }
+    
 }
