@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Header("Health Parameters")]
+    [SerializeField] private float maxHealth = 100;
+    [SerializeField] private float timeBeforeRegenStarts = 3;
+    [SerializeField] private float healthValueIncrement = 1;
+    [SerializeField] private float healthTimeIncrement = 0.1f;
+    private float currentHealth;
+    private Coroutine regeneratingHealth;
+
     [Header("Movement")]
     public float moveSpeed;
 
@@ -114,5 +122,22 @@ public class PlayerMovement : MonoBehaviour
     {
         readyToJump = true;
     }
-    
+
+    void Awake()
+    {
+        currentHealth = maxHealth;
+    }
+
+    private void Applydamage(float dmg)
+    {
+
+    }
+
+    private void KillPlayer()
+    {
+
+    }
+
+
+
 }
