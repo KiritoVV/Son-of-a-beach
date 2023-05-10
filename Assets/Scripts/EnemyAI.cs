@@ -11,8 +11,8 @@ public class EnemyAI : MonoBehaviour
 
     public Transform player;
 
-    public GameObject bullets;
-    public GameObject barrel;
+    public GameObject Bullets;
+    public GameObject Barrel;
 
     public LayerMask whatIsGround, whatIsPlayer;
 
@@ -25,7 +25,6 @@ public class EnemyAI : MonoBehaviour
     public float timeBetweenAttacks;
     bool alreadyAttacked;
 
-    public float health;
 
     //States
     public float sightRange, attackRange;
@@ -33,14 +32,9 @@ public class EnemyAI : MonoBehaviour
 
     private void Awake()
     {
-        player = GameObject.Find("PlayerObj").transform;
+        player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
-    }
 
-    private void Start()
-    {
-        //part = GetComponent<ParticleSystem>();
-        //collision = new List<ParticleCollisionEvent>();
     }
 
     private void Update()
@@ -111,16 +105,15 @@ public class EnemyAI : MonoBehaviour
         agent.SetDestination(transform.position);
 
         transform.LookAt(player);
-
         if (!alreadyAttacked)
         {
-            // Rigidbody rb = Instantiate(bullets, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
+            // Rigidbody rb = Instantiate(Bullets, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
             //rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
             //rb.AddForce(transform.up * 32f, ForceMode.Impulse);
 
-            GameObject bulletObject = Instantiate(bullets);
-            bulletObject.transform.position = barrel.transform.position + transform.forward;
-            bulletObject.transform.forward = barrel.transform.forward; /// Gun shooting from the barrel
+            //GameObject bulletObject = Instantiate(Bullets);
+            //bulletObject.transform.position = Barrel.transform.position + transform.forward;
+            //bulletObject.transform.forward = Barrel.transform.forward;
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
@@ -131,41 +124,5 @@ public class EnemyAI : MonoBehaviour
         alreadyAttacked = false;
     }
 
-    void TakeDamage(int damage)
-    {
-        health -= damage;
 
-        if (health <= 0)
-        {
-            Invoke(nameof(DestroyEnemy), .1f);
-        }
-    }
-
-    private void DestroyEnemy()
-    {
-        Destroy(gameObject);
-    }
-
-    private void OnParticleCollision(GameObject other)
-    {
-        //int numCollisionEvents = ParticleCollisionEvent.GetCollisionEvents(other, collisionEvents);
-
-        if (other.tag == "PaintCollision")
-        {
-            Debug.Log("Run");
-            Debug.Log(health);
-
-            TakeDamage(1);
-        }
-
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "EnemyBullets")
-        {
-            TakeDamage(5);
-            Destroy(other);
-        }
-    }
 }
