@@ -4,17 +4,17 @@ ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: -4752867916514867510
-    second: Arms.003|Arms.003Action
+      74: -1744425048435967586
+    second: Arms|Arms.003Action
   - first:
-      74: 151688348639955537
-    second: Arms.003|CubeAction
+      74: -820628506352194389
+    second: Arms|CubeAction
   - first:
-      74: 6596087815166684051
-    second: Arms.003|Hands.002Action
+      74: -6174513903760029565
+    second: Arms|Hands.002Action
   - first:
-      74: 7774394183138357353
-    second: Arms.003|Sphere.008Action
+      74: 636891119098057352
+    second: Arms|Sphere.008Action
   - first:
       74: 1413180395057353364
     second: Hands.002|Arms.003Action
@@ -28,29 +28,29 @@ ModelImporter:
       74: 4862253537696231918
     second: Hands.002|Sphere.008Action
   - first:
-      74: -3003748113696927643
-    second: Sphere.008|Arms.003Action
+      74: -3805032133403227420
+    second: Head|Arms.003Action
   - first:
-      74: 7299561018559885717
-    second: Sphere.008|CubeAction
+      74: 2576043757281225284
+    second: Head|CubeAction
   - first:
-      74: 448289373139722591
-    second: Sphere.008|Hands.002Action
+      74: 8109340034084022809
+    second: Head|Hands.002Action
   - first:
-      74: -501676656270133927
-    second: Sphere.008|Sphere.008Action
+      74: -2976496257051850701
+    second: Head|Sphere.008Action
   - first:
-      74: -4102538169560792812
-    second: Cube|Arms.003Action
+      74: -6730919370653033380
+    second: Fishing Rod|Arms.003Action
   - first:
-      74: -3999578356269874737
-    second: Cube|CubeAction
+      74: 2097741064025734815
+    second: Fishing Rod|CubeAction
   - first:
-      74: 1972311389052611198
-    second: Cube|Hands.002Action
+      74: 6779837807196895783
+    second: Fishing Rod|Hands.002Action
   - first:
-      74: 2832087287425719343
-    second: Cube|Sphere.008Action
+      74: -8049678813270833660
+    second: Fishing Rod|Sphere.008Action
   externalObjects: {}
   materials:
     materialImportMode: 2
