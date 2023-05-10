@@ -4,7 +4,7 @@ using System.Threading;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class CrabMonster : MonoBehaviour
+public class EnemyAI : MonoBehaviour
 {
     [Header("References")]
     public NavMeshAgent agent;
@@ -118,6 +118,10 @@ public class CrabMonster : MonoBehaviour
             //rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
             //rb.AddForce(transform.up * 32f, ForceMode.Impulse);
 
+            GameObject bulletObject = Instantiate(bullets);
+            bulletObject.transform.position = barrel.transform.position + transform.forward;
+            bulletObject.transform.forward = barrel.transform.forward; /// Gun shooting from the barrel
+
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
@@ -127,4 +131,41 @@ public class CrabMonster : MonoBehaviour
         alreadyAttacked = false;
     }
 
+    void TakeDamage(int damage)
+    {
+        health -= damage;
+
+        if (health <= 0)
+        {
+            Invoke(nameof(DestroyEnemy), .1f);
+        }
+    }
+
+    private void DestroyEnemy()
+    {
+        Destroy(gameObject);
+    }
+
+    private void OnParticleCollision(GameObject other)
+    {
+        //int numCollisionEvents = ParticleCollisionEvent.GetCollisionEvents(other, collisionEvents);
+
+        if (other.tag == "PaintCollision")
+        {
+            Debug.Log("Run");
+            Debug.Log(health);
+
+            TakeDamage(1);
+        }
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "EnemyBullets")
+        {
+            TakeDamage(5);
+            Destroy(other);
+        }
+    }
 }
