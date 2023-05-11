@@ -41,11 +41,14 @@ public class InventoryManager : MonoBehaviour
 
     public void RemoveItem()
     {
-        for (int i = itemSlot.Length - 1; i > 0; i--)
+        for (int i = (itemSlot.Length - 1); i >= 0; i--)
         {
+            Debug.Log(i);
+
             if (itemSlot[i].isFull == true)
             {
                 itemSlot[i].RemoveItem();
+                return;
             }
         }
     }
