@@ -37,6 +37,20 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
         itemImage.sprite = itemSprite;
     }
 
+    public void RemoveItem()
+    {
+        Debug.Log("item slot is called");
+
+        itemName = null;
+        quantity = 0;
+        itemSprite = null;
+        isFull = false;
+
+        quantityText.text = quantity.ToString();
+        quantityText.enabled = false;
+        itemImage.sprite = null;
+    }
+
     public void OnPointerClick(PointerEventData eventData)
     {
         if(eventData.button == PointerEventData.InputButton.Left)
