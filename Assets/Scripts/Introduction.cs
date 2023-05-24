@@ -8,7 +8,6 @@ public class Introduction : MonoBehaviour
 {
     public GameObject UInterface;
     public GameObject introduction;
-    public RawImage Crosshair;
 
     public VideoPlayer vc;
 
@@ -28,13 +27,11 @@ public class Introduction : MonoBehaviour
         if (vc.isPlaying == true)
         {
             UInterface.SetActive(false);
-            Crosshair.gameObject.SetActive(false);
             playing = true;
         }
         if (playing == true && vc.isPlaying == false)
         {
             UInterface.SetActive(true);
-            Crosshair.gameObject.SetActive(true);
             introduction.SetActive(false);
         }
 
